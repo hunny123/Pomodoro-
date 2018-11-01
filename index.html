@@ -1,0 +1,118 @@
+
+<html>
+<head>
+	<title>Pomodoro Clock</title>
+
+  <script src="main.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<style>
+  body{
+   background: rgba(51,188,230,1);
+background: -moz-linear-gradient(-45deg, rgba(51,188,230,1) 0%, rgba(170,221,239,1) 52%, rgba(202,230,242,1) 66%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(51,188,230,1)), color-stop(52%, rgba(170,221,239,1)), color-stop(66%, rgba(202,230,242,1)));
+background: -webkit-linear-gradient(-45deg, rgba(51,188,230,1) 0%, rgba(170,221,239,1) 52%, rgba(202,230,242,1) 66%);
+background: -o-linear-gradient(-45deg, rgba(51,188,230,1) 0%, rgba(170,221,239,1) 52%, rgba(202,230,242,1) 66%);
+background: -ms-linear-gradient(-45deg, rgba(51,188,230,1) 0%, rgba(170,221,239,1) 52%, rgba(202,230,242,1) 66%);
+background: linear-gradient(135deg, rgba(51,188,230,1) 0%, rgba(170,221,239,1) 52%, rgba(202,230,242,1) 66%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33bce6', endColorstr='#cae6f2', GradientType=1 ); 
+  }
+  h1{
+    color:black;
+    font-weight:bold;
+  }
+  .d3{
+
+	text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+    color:black;
+
+}
+
+  p{
+    color:black;
+    font-weight:bold;
+    font-size:20px;
+  }
+  button{
+    color:black;
+    background:transparent;
+    border-radius:10%;
+    padding:5px 20px 5px 20px ;
+    font-weight:bold;
+  }
+  #sediv{
+    
+    padding:25px;
+    margin:10px;
+    
+  }
+  #brdiv{
+         
+    padding:25px;
+    margin:15px;
+    display:none;
+  }
+  .bv,.sv{
+    
+    display:inline;
+    padding:20px;
+  }
+  .block{
+    
+   
+   height:100px;
+    margin-top:0px;
+  }
+  .jumbotron1{
+    background:rgba(0,0,0,0);
+    padding:10px;
+  }
+  .start ,.stop{
+    margin-top:-10px;
+  } 
+  </style>
+</head>
+<body class="d3" >
+     
+  <div class="jumbotron1">
+    <h1> Promodoro Clock</h1>
+    
+  </div>
+  <div class="container p-4" >
+  <div class="row">
+    <div class="col-lg-4">
+      <img src="https://primepay.com/sites/default/files/2017-04/Time%20Clock%20-%20Blue_1.png"class=" img-fluid"></div>
+    <div class="col-lg-8">
+    
+<!--main-->
+<center>
+<div class="block">
+<h1>Break Length</h1>
+  <button class="btn2">-</button><p class="bv">5</p><button class = "btn1">+</button></div><div class="block ">
+<h1>Session length</h1>
+  <button class="btn4">-</button><p class="sv">25</p><button class = "btn3">+</button>	</div>
+	<div id="sediv"> <h1>Session Time</h1> <p class = "change">25</p>
+	</div>
+  <div id="brdiv" > <h1>Break Time</h1> <p class = "break"> </p>
+	</div>
+  <div>
+	<button class="start ">start</button>
+    <button class="stop" style="display:none;">stop</button></div></div>
+	<script>
+ 
+	</script>
+</body>
+
+
+</html>
